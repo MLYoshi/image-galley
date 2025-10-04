@@ -6,8 +6,8 @@ body {
 }
 .gallery {
   display: flex;
-  gap: 5rem;
-  max-width: 80rem;
+  gap: 20vh;
+  max-width: 80vw;
   flex-wrap: wrap;
 }
 
@@ -15,8 +15,8 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 1.2rem;
-  max-width: 2rem;
-  height: 80vh;
+  max-width: 2vw;
+  height: 60vh;
   cursor: pointer;
   background: #d5d5d5ff;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
@@ -27,7 +27,7 @@ body {
 .gallery card:hover {
   flex: ;
   border-radius: 1rem;
-  max-width: 40rem;
+  max-width: 60vw;
 }
 .gallery card img {
   object-fit: cover;
