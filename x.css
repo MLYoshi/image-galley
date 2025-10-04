@@ -7,7 +7,7 @@ body {
 .gallery {
   display: flex;
   gap: 20vh;
-  max-width: 80vw;
+  max-width: 80%;
   flex-wrap: wrap;
 }
 
