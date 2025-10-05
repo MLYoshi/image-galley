@@ -1,20 +1,28 @@
 body {
   display: grid;
-  background: #a87474ff;
   place-items: center;
+  background: #a87474ff;
   height: 100vh;
+}
+.App {
+  display: grid;
+  grid-template-columns: 1fr 20fr 1fr;
+  grid-template-areas: "left center right";
+  align-items: center;
 }
 .gallery {
   display: flex;
   gap: 20vh;
-  max-width: 80%;
+  max-width: 80vw;
+  grid-area: center;
+  justify-content: center;
 }
 
 .gallery card {
   position: relative;
   overflow: hidden;
   border-radius: 1.2rem;
-  max-width: 2vw;
+  max-width: 4vw;
   height: 60vh;
   cursor: pointer;
   background: #d5d5d5ff;
@@ -24,7 +32,7 @@ body {
 }
 
 .gallery card:hover {
-  flex: ;
+  flex: 3;
   border-radius: 1rem;
   max-width: 60vw;
 }
@@ -32,6 +40,44 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.last-page {
+  /* 左按钮：额外样式可选，如对齐调整 */
+  grid-area: left;
+  justify-self: end;
+  position: absolute; /* 绝对定位 */
+  left: 0;
+  width: 7vw;
+  height: 5vw;
+  background-image: url("./arrow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+  boarder: none;
+  cursor: pointer;
+}
+
+.next-page {
+  /* 右按钮：额外样式可选，如对齐调整 */
+  grid-area: right;
+  justify-self: start;
+  position: absolute; /* 绝对定位 */
+  right: 0;
+  width: 7vw;
+  height: 5vw;
+  background-image: url("./arrow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  boarder: none;
+  cursor: pointer;
+}
+
+.last-page:hover,
+.next-page:hover {
+  scale: 1.1;
 }
 
 /* 媒体查询：针对手机和小屏幕（宽度 ≤ 768px） */

@@ -1,0 +1,34 @@
+[
+  {
+    "filename": "image1.JPG",
+    "path": "images\\image1.JPG"
+  },
+  {
+    "filename": "image2.JPG",
+    "path": "images\\image2.JPG"
+  },
+  {
+    "filename": "image3.JPG",
+    "path": "images\\image3.JPG"
+  },
+  {
+    "filename": "image4.JPG",
+    "path": "images\\image4.JPG"
+  },
+  {
+    "filename": "image5.JPG",
+    "path": "images\\image5.JPG"
+  },
+  {
+    "filename": "image6.png",
+    "path": "images\\image6.png"
+  },
+  {
+    "filename": "image7.png",
+    "path": "images\\image7.png"
+  },
+  {
+    "filename": "image8.png",
+    "path": "images\\image8.png"
+  }
+]
